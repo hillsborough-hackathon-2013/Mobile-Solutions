@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HackathonContext" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="HackathonEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="nals" EntityType="HackathonContext.nal" />
+    <EntitySet Name="sales" EntityType="HackathonContext.sale" />
+  </EntityContainer>
+  <EntityType Name="nal">
+    <Key>
+      <PropertyRef Name="nalId" />
+    </Key>
+    <Property Name="nalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="strap" Type="String" MaxLength="25" Unicode="false" FixedLength="true" />
+    <Property Name="folio" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="dor_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="val_method" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mill_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="nh_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="vac_impr_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="yr_impr" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="yr_annexed" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="splt_dt" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="dsc_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="base_yr" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mkt_ar1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mkt_ar2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="pr_strap" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="prob_deed" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="tenancy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="hx_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="wid_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="wdr_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="dis_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="wx_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="jst_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="cls_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="asd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="soh_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="tax_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="cur_base" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="pct_soh" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mkt_soh" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mkt_mkt" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ag_x_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="tot_bld_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="cost_bld_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="tot_xf_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="tot_lnd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="cls_lnd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ag_lnd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="asd_lnd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ncon_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="demo_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="comb_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="split_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="px_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="pr_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ag_x_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="yr_created" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="pr_dor_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="map_id" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="own_dt" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="life_est" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="jt_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="inc_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mh_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="lnd_sale_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="conf_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mortage_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="owner1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="owner2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="m_state" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="m_addr_1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="m_addr_2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="m_city" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="m_zip" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="m_country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="carr_rt" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mailto" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="str" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+    <Property Name="str_pfx" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="str_num" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="str_sfx" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="str_unit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="s_zip" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="s_city" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="plat_bk" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="plat_pg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sale">
+    <Key>
+      <PropertyRef Name="SalesId" />
+    </Key>
+    <Property Name="SalesId" Type="Int32" Nullable="false" />
+    <Property Name="strap" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="true" />
+    <Property Name="folio" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="ln_num" Type="Int32" />
+    <Property Name="trns_cd" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="or_bk" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="or_pg" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="grantor" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+    <Property Name="grantee" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+    <Property Name="dos" Type="DateTime" />
+    <Property Name="price" Type="Int32" />
+    <Property Name="vi" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="qu_flg" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="doc_stamps" Type="Decimal" Precision="9" Scale="2" />
+    <Property Name="rea_cd" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+  </EntityType>
+</Schema>

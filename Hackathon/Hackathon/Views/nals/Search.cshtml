@@ -1,0 +1,33 @@
+@model Hackathon.DomainModel.nal
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search sample Data</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+            <li>WOERNER DEBRA</li>
+<li>JOTCH DWAYNE F</li>
+<li>ODEN DANIEL W</li>
+<li>MINARDI JOSEPH N</li>
+<li>MINARDI JOSEPH N</li>
+<li>PINKERTON GEORGE J JR TRUSTEE</li>
+    <fieldset>
+        <legend>nal</legend>
+
+        <li>BLAZEK GREGORY A</li>
+        <div class="label">Owner(last name first name)</div>
+        @Html.TextBoxFor(model => model.owner1)
+        <div class="label">Address</div>
+        @Html.TextBoxFor(model => model.m_addr_1)
+
+        <p>
+            <input type="submit" value="Search" />
+        </p>
+    </fieldset>
+}
+
+

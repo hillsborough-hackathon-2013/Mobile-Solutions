@@ -1,0 +1,59 @@
+@model Hackathon.DomainModel.sale
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>sale</legend>
+
+    <div class="label">strap</div>
+    <div class="display-field">@Model.strap</div>
+
+    <div class="label">folio</div>
+    <div class="display-field">@Model.folio</div>
+
+    <div class="label">ln_num</div>
+    <div class="display-field">@Model.ln_num</div>
+
+    <div class="label">trns_cd</div>
+    <div class="display-field">@Model.trns_cd</div>
+
+    <div class="label">or_bk</div>
+    <div class="display-field">@Model.or_bk</div>
+
+    <div class="label">or_pg</div>
+    <div class="display-field">@Model.or_pg</div>
+
+    <div class="label">grantor</div>
+    <div class="display-field">@Model.grantor</div>
+
+    <div class="label">grantee</div>
+    <div class="display-field">@Model.grantee</div>
+
+    <div class="label">dos</div>
+    <div class="display-field">@String.Format("{0:g}", Model.dos)</div>
+
+    <div class="label">price</div>
+    <div class="display-field">@Model.price</div>
+
+    <div class="label">vi</div>
+    <div class="display-field">@Model.vi</div>
+
+    <div class="label">qu_flg</div>
+    <div class="display-field">@Model.qu_flg</div>
+
+    <div class="label">doc_stamps</div>
+    <div class="display-field">@String.Format("{0:F}", Model.doc_stamps)</div>
+
+    <div class="label">rea_cd</div>
+    <div class="display-field">@Model.rea_cd</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SalesId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

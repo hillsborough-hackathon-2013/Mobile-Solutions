@@ -1,0 +1,594 @@
+@model IEnumerable<Hackathon.DomainModel.nal>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table>
+    <tr>
+        <th></th><th></th>
+        <th>
+            strap
+        </th>
+        <th>
+            folio
+        </th>
+        @*  <th>
+            dor_cd
+        </th>
+        <th>
+            val_method
+        </th>
+        <th>
+            mill_cd
+        </th>
+        <th>
+            nh_cd
+        </th>
+        <th>
+            vac_impr_flg
+        </th>
+        <th>
+            yr_impr
+        </th>
+        <th>
+            yr_annexed
+        </th>
+        <th>
+            splt_dt
+        </th>
+        <th>
+            dsc_cd
+        </th>
+        <th>
+            base_yr
+        </th>
+        <th>
+            mkt_ar1
+        </th>
+        <th>
+            mkt_ar2
+        </th>
+        <th>
+            pr_strap
+        </th>
+        <th>
+            prob_deed
+        </th>
+        <th>
+            tenancy
+        </th>
+        <th>
+            hx_val
+        </th>
+        <th>
+            wid_val
+        </th>
+        <th>
+            wdr_val
+        </th>
+        <th>
+            dis_val
+        </th>
+        <th>
+            wx_val
+        </th>
+        <th>
+            jst_val
+        </th>
+        <th>
+            cls_val
+        </th>
+        <th>
+            asd_val
+        </th>
+        <th>
+            soh_val
+        </th>
+        <th>
+            tax_val
+        </th>
+        <th>
+            cur_base
+        </th>
+        <th>
+            pct_soh
+        </th>
+        <th>
+            mkt_soh
+        </th>
+        <th>
+            mkt_mkt
+        </th>
+        <th>
+            ag_x_val
+        </th>
+        <th>
+            tot_bld_val
+        </th>
+        <th>
+            cost_bld_val
+        </th>
+        <th>
+            tot_xf_val
+        </th>
+        <th>
+            tot_lnd_val
+        </th>
+        <th>
+            cls_lnd_val
+        </th>
+        <th>
+            ag_lnd_val
+        </th>
+        <th>
+            asd_lnd_val
+        </th>
+        <th>
+            ncon_val
+        </th>
+        <th>
+            demo_val
+        </th>
+        <th>
+            comb_val
+        </th>
+        <th>
+            split_val
+        </th>
+        <th>
+            px_val
+        </th>
+        <th>
+            pr_val
+        </th>
+        <th>
+            ag_x_flg
+        </th>
+        <th>
+            yr_created
+        </th>
+        <th>
+            pr_dor_cd
+        </th>
+        <th>
+            map_id
+        </th>
+        <th>
+            own_dt
+        </th>
+        <th>
+            life_est
+        </th>
+        <th>
+            jt_flg
+        </th>
+        <th>
+            inc_flg
+        </th>
+        <th>
+            mh_flg
+        </th>
+        <th>
+            lnd_sale_flg
+        </th>
+        <th>
+            conf_flg
+        </th>
+        <th>
+            mortage_cd
+        </th>*@
+        <th>
+            owner1
+        </th>
+        <th>
+            owner2
+        </th>
+        <th>
+            m_state
+        </th>
+        <th>
+            
+            m_addr_1
+        </th>
+        <th>
+            m_addr_2
+        </th>
+        <th>
+            m_city
+        </th>
+        <th>
+            m_zip
+        </th>
+        @* <th>
+            m_country
+        </th>
+        <th>
+            carr_rt
+        </th>
+        <th>
+            mailto
+        </th>
+        <th>
+            str
+        </th>
+        <th>
+            str_pfx
+        </th>
+        <th>
+            str_num
+        </th>
+        <th>
+            str_sfx
+        </th>
+        <th>
+            str_unit
+        </th>
+        <th>
+            s_zip
+        </th>
+        <th>
+            s_city
+        </th>
+        <th>
+            plat_bk
+        </th>
+        <th>
+            plat_pg
+        </th>*@
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id=item.nalId }) 
+            
+
+            </td>
+            <td>
+                @Html.ActionLink("Sales",
+                       "Index",
+                       "Sales",
+                       new {@item.strap},
+                       null ) 
+            </td>
+     
+            <td>
+                @item.folio
+            </td>
+            @*<td>
+			@item.dor_cd
+        </td>
+        <td>
+			@item.val_method
+        </td>
+        <td>
+			@item.mill_cd
+        </td>
+        <td>
+			@item.nh_cd
+        </td>
+        <td>
+			@item.vac_impr_flg
+        </td>
+        <td>
+			@item.yr_impr
+        </td>
+        <td>
+			@item.yr_annexed
+        </td>
+        <td>
+			@item.splt_dt
+        </td>
+        <td>
+			@item.dsc_cd
+        </td>
+        <td>
+			@item.base_yr
+        </td>
+        <td>
+			@item.mkt_ar1
+        </td>
+        <td>
+			@item.mkt_ar2
+        </td>
+        <td>
+			@item.pr_strap
+        </td>
+        <td>
+			@item.prob_deed
+        </td>
+        <td>
+			@item.tenancy
+        </td>
+        <td>
+			@item.hx_val
+        </td>
+        <td>
+			@item.wid_val
+        </td>
+        <td>
+			@item.wdr_val
+        </td>
+        <td>
+			@item.dis_val
+        </td>
+        <td>
+			@item.wx_val
+        </td>
+        <td>
+			@item.jst_val
+        </td>
+        <td>
+			@item.cls_val
+        </td>
+        <td>
+			@item.asd_val
+        </td>
+        <td>
+			@item.soh_val
+        </td>
+        <td>
+			@item.tax_val
+        </td>
+        <td>
+			@item.cur_base
+        </td>
+        <td>
+			@item.pct_soh
+        </td>
+        <td>
+			@item.mkt_soh
+        </td>
+        <td>
+			@item.mkt_mkt
+        </td>
+        <td>
+			@item.ag_x_val
+        </td>
+        <td>
+			@item.tot_bld_val
+        </td>
+        <td>
+			@item.cost_bld_val
+        </td>
+        <td>
+			@item.tot_xf_val
+        </td>
+        <td>
+			@item.tot_lnd_val
+        </td>
+        <td>
+			@item.cls_lnd_val
+        </td>
+        <td>
+			@item.ag_lnd_val
+        </td>
+        <td>
+			@item.asd_lnd_val
+        </td>
+        <td>
+			@item.ncon_val
+        </td>
+        <td>
+			@item.demo_val
+        </td>
+        <td>
+			@item.comb_val
+        </td>
+        <td>
+			@item.split_val
+        </td>
+        <td>
+			@item.px_val
+        </td>
+        <td>
+			@item.pr_val
+        </td>
+        <td>
+			@item.ag_x_flg
+        </td>
+        <td>
+			@item.yr_created
+        </td>
+        <td>
+			@item.pr_dor_cd
+        </td>
+        <td>
+			@item.map_id
+        </td>
+        <td>
+			@item.own_dt
+        </td>
+        <td>
+			@item.life_est
+        </td>
+        <td>
+			@item.jt_flg
+        </td>
+        <td>
+			@item.inc_flg
+        </td>
+        <td>
+			@item.mh_flg
+        </td>
+        <td>
+			@item.lnd_sale_flg
+        </td>
+        <td>
+			@item.conf_flg
+        </td>
+        <td>
+			@item.mortage_cd
+        </td>*@
+            <td>
+                @item.owner1
+            </td>
+            <td>
+                @item.owner2
+            </td>
+            <td>
+                @item.m_state
+            </td>
+            <td>
+                <button id="address" value="@item.m_addr_1 @item.m_city">@item.m_addr_1</button>
+                @*<button id="address" value="@item.m_addr_1" data-dojo-type="dijit.form.Button" onclick="locate()"> @item.m_addr_1</button> *@
+            </td>
+            <td>
+                @item.m_addr_2
+            </td>
+            <td>
+                @item.m_city
+            </td>
+            <td>
+                @item.m_zip
+            </td>
+            @*<td>
+			@item.m_country
+        </td>
+        <td>
+			@item.carr_rt
+        </td>
+        <td>
+			@item.mailto
+        </td>
+        <td>
+			@item.str
+        </td>
+        <td>
+			@item.str_pfx
+        </td>
+        <td>
+			@item.str_num
+        </td>
+        <td>
+			@item.str_sfx
+        </td>
+        <td>
+			@item.str_unit
+        </td>
+        <td>
+			@item.s_zip
+        </td>
+        <td>
+			@item.s_city
+        </td>
+        <td>
+			@item.plat_bk
+        </td>
+        <td>
+			@item.plat_pg
+        </td>*@
+        </tr>
+    }
+
+</table>
+
+<div id="mainWindow" data-dojo-type="dijit.layout.BorderContainer" 
+         data-dojo-props="design:'sidebar', gutters:false" 
+         style="width:50%; height:50%;">
+
+      <div id="leftPane" class="roundedCorners" 
+           data-dojo-type="dijit.layout.ContentPane" 
+           data-dojo-props="region:'left'">
+       
+        <br />
+      @*  <textarea type="text" id="address"/></textArea>*@
+        <br />
+        @*<button data-dojo-type="dijit.form.Button" onclick="locate()"> Locate</button> *@
+      </div>
+      <div id="map" class="roundedCorners shadow" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'">
+      </div>
+    </div>
+
+<script>     var dojoConfig = { parseOnLoad: true };</script>
+    <script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/"></script>
+    <script>
+        dojo.require("esri.map");
+        dojo.require("esri.tasks.locator");
+        dojo.require("dojo.number");
+        dojo.require("dijit.form.Button");
+        dojo.require("dijit.form.Textarea");
+        dojo.require("dijit.layout.BorderContainer");
+        dojo.require("dijit.layout.ContentPane");
+
+        var map, locator;
+
+        function init() {
+            map = new esri.Map("map", {
+                basemap: "streets",
+                center: [-93.5, 41.431],
+                zoom: 5
+            });
+
+            locator = new esri.tasks.Locator("http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer");
+            dojo.connect(locator, "onAddressToLocationsComplete", showResults);
+
+            map.infoWindow.resize(200, 125);
+           
+        }
+
+        function jQueryReady() {
+            $("#address").click(function () {
+                locate();
+
+            });
+
+
+            
+        }
+
+        function locate() {
+            map.graphics.clear();
+//            dojo.byId("address").value
+               var address = { "SingleLine": $('#address').attr('value') };
+            locator.outSpatialReference = map.spatialReference;
+            var options = {
+                address: address,
+                outFields: ["Loc_name"]
+            }
+            locator.addressToLocations(options);
+        }
+
+        function showResults(candidates) {
+            var candidate;
+            var symbol = new esri.symbol.SimpleMarkerSymbol();
+            var infoTemplate = new esri.InfoTemplate("Location", "Address: ${address}<br />Score: ${score}<br />Source locator: ${locatorName}");
+
+            symbol.setStyle(esri.symbol.SimpleMarkerSymbol.STYLE_SQUARE);
+            symbol.setColor(new dojo.Color([153, 0, 51, 0.75]));
+
+            var geom;
+
+            dojo.every(candidates, function (candidate) {
+                console.log(candidate.score);
+                if (candidate.score > 80) {
+                    console.log(candidate.location);
+                    var attributes = { address: candidate.address, score: candidate.score, locatorName: candidate.attributes.Loc_name };
+                    geom = candidate.location;
+                    var graphic = new esri.Graphic(geom, symbol, attributes, infoTemplate);
+                    //add a graphic to the map at the geocoded location
+                    map.graphics.add(graphic);
+                    //add a text symbol to the map listing the location of the matched address.
+                    var displayText = candidate.address;
+                    var font = new esri.symbol.Font("16pt", esri.symbol.Font.STYLE_NORMAL, esri.symbol.Font.VARIANT_NORMAL, esri.symbol.Font.WEIGHT_BOLD, "Helvetica");
+
+                    var textSymbol = new esri.symbol.TextSymbol(displayText, font, new dojo.Color("#666633"));
+                    textSymbol.setOffset(0, 8);
+                    map.graphics.add(new esri.Graphic(geom, textSymbol));
+                    return false; //break out of loop after one candidate with score greater  than 80 is found.
+                }
+            });
+            if (geom !== undefined) {
+                map.centerAndZoom(geom, 12);
+            }
+
+        }
+        dojo.ready(init);
+        $(document).ready(jQueryReady);
+        
+
+    
+
+
+    </script>

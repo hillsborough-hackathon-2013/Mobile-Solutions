@@ -1,0 +1,111 @@
+@model IEnumerable<Hackathon.DomainModel.sale>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Sales</h2>
+
+
+<table>
+    <tr>
+        <th></th>
+        <th>
+            strap
+        </th>
+        <th>
+            folio
+        </th>
+        <th>
+            ln_num
+        </th>
+        <th>
+            trns_cd
+        </th>
+        <th>
+            or_bk
+        </th>
+        <th>
+            or_pg
+        </th>
+        <th>
+            grantor
+        </th>
+        <th>
+            grantee
+        </th>
+        <th>
+            dos
+        </th>
+        <th>
+            price
+        </th>
+        <th>
+            vi
+        </th>
+   @*     <th>
+            qu_flg
+        </th>
+        <th>
+            doc_stamps
+        </th>
+        <th>
+            rea_cd
+        </th>*@
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+           
+            @Html.ActionLink("Details", "Details", new { id=item.SalesId }) 
+            
+        </td>
+        <td>
+			@item.strap
+        </td>
+        <td>
+			@item.folio
+        </td>
+        <td>
+			@item.ln_num
+        </td>
+        <td>
+			@item.trns_cd
+        </td>
+        <td>
+			@item.or_bk
+        </td>
+        <td>
+			@item.or_pg
+        </td>
+        <td>
+			@item.grantor
+        </td>
+        <td>
+			@item.grantee
+        </td>
+        <td>
+			@String.Format("{0:g}", item.dos)
+        </td>
+        <td>
+			@item.price
+        </td>
+        <td>
+			@item.vi
+        </td>
+        @*<td>
+			@item.qu_flg
+        </td>
+        <td>
+			@String.Format("{0:F}", item.doc_stamps)
+        </td>
+        <td>
+			@item.rea_cd
+        </td>*@
+    </tr>
+}
+
+</table>
+
+

@@ -1,0 +1,62 @@
+@model Hackathon.DomainModel.sale
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>sale</legend>
+
+    <div class="display-label">strap</div>
+    <div class="display-field">@Model.strap</div>
+
+    <div class="display-label">folio</div>
+    <div class="display-field">@Model.folio</div>
+
+    <div class="display-label">ln_num</div>
+    <div class="display-field">@Model.ln_num</div>
+
+    <div class="display-label">trns_cd</div>
+    <div class="display-field">@Model.trns_cd</div>
+
+    <div class="display-label">or_bk</div>
+    <div class="display-field">@Model.or_bk</div>
+
+    <div class="display-label">or_pg</div>
+    <div class="display-field">@Model.or_pg</div>
+
+    <div class="display-label">grantor</div>
+    <div class="display-field">@Model.grantor</div>
+
+    <div class="display-label">grantee</div>
+    <div class="display-field">@Model.grantee</div>
+
+    <div class="display-label">dos</div>
+    <div class="display-field">@String.Format("{0:g}", Model.dos)</div>
+
+    <div class="display-label">price</div>
+    <div class="display-field">@Model.price</div>
+
+    <div class="display-label">vi</div>
+    <div class="display-field">@Model.vi</div>
+
+    <div class="display-label">qu_flg</div>
+    <div class="display-field">@Model.qu_flg</div>
+
+    <div class="display-label">doc_stamps</div>
+    <div class="display-field">@String.Format("{0:F}", Model.doc_stamps)</div>
+
+    <div class="display-label">rea_cd</div>
+    <div class="display-field">@Model.rea_cd</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

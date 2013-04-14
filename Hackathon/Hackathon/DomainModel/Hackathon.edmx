@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HackathonContext.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="HackathonContextStoreContainer">
+          <EntitySet Name="nal" EntityType="HackathonContext.Store.nal" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sales" EntityType="HackathonContext.Store.sales" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="nal">
+          <Key>
+            <PropertyRef Name="nalId" />
+          </Key>
+          <Property Name="nalId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="strap" Type="char" MaxLength="25" />
+          <Property Name="folio" Type="varchar" MaxLength="50" />
+          <Property Name="dor_cd" Type="varchar" MaxLength="50" />
+          <Property Name="val_method" Type="varchar" MaxLength="50" />
+          <Property Name="mill_cd" Type="varchar" MaxLength="50" />
+          <Property Name="nh_cd" Type="varchar" MaxLength="50" />
+          <Property Name="vac_impr_flg" Type="varchar" MaxLength="50" />
+          <Property Name="yr_impr" Type="varchar" MaxLength="50" />
+          <Property Name="yr_annexed" Type="varchar" MaxLength="50" />
+          <Property Name="splt_dt" Type="varchar" MaxLength="50" />
+          <Property Name="dsc_cd" Type="varchar" MaxLength="50" />
+          <Property Name="base_yr" Type="varchar" MaxLength="50" />
+          <Property Name="mkt_ar1" Type="varchar" MaxLength="50" />
+          <Property Name="mkt_ar2" Type="varchar" MaxLength="50" />
+          <Property Name="pr_strap" Type="varchar" MaxLength="50" />
+          <Property Name="prob_deed" Type="varchar" MaxLength="50" />
+          <Property Name="tenancy" Type="varchar" MaxLength="50" />
+          <Property Name="hx_val" Type="varchar" MaxLength="50" />
+          <Property Name="wid_val" Type="varchar" MaxLength="50" />
+          <Property Name="wdr_val" Type="varchar" MaxLength="50" />
+          <Property Name="dis_val" Type="varchar" MaxLength="50" />
+          <Property Name="wx_val" Type="varchar" MaxLength="50" />
+          <Property Name="jst_val" Type="varchar" MaxLength="50" />
+          <Property Name="cls_val" Type="varchar" MaxLength="50" />
+          <Property Name="asd_val" Type="varchar" MaxLength="50" />
+          <Property Name="soh_val" Type="varchar" MaxLength="50" />
+          <Property Name="tax_val" Type="varchar" MaxLength="50" />
+          <Property Name="cur_base" Type="varchar" MaxLength="50" />
+          <Property Name="pct_soh" Type="varchar" MaxLength="50" />
+          <Property Name="mkt_soh" Type="varchar" MaxLength="50" />
+          <Property Name="mkt_mkt" Type="varchar" MaxLength="50" />
+          <Property Name="ag_x_val" Type="varchar" MaxLength="50" />
+          <Property Name="tot_bld_val" Type="varchar" MaxLength="50" />
+          <Property Name="cost_bld_val" Type="varchar" MaxLength="50" />
+          <Property Name="tot_xf_val" Type="varchar" MaxLength="50" />
+          <Property Name="tot_lnd_val" Type="varchar" MaxLength="50" />
+          <Property Name="cls_lnd_val" Type="varchar" MaxLength="50" />
+          <Property Name="ag_lnd_val" Type="varchar" MaxLength="50" />
+          <Property Name="asd_lnd_val" Type="varchar" MaxLength="50" />
+          <Property Name="ncon_val" Type="varchar" MaxLength="50" />
+          <Property Name="demo_val" Type="varchar" MaxLength="50" />
+          <Property Name="comb_val" Type="varchar" MaxLength="50" />
+          <Property Name="split_val" Type="varchar" MaxLength="50" />
+          <Property Name="px_val" Type="varchar" MaxLength="50" />
+          <Property Name="pr_val" Type="varchar" MaxLength="50" />
+          <Property Name="ag_x_flg" Type="varchar" MaxLength="50" />
+          <Property Name="yr_created" Type="varchar" MaxLength="50" />
+          <Property Name="pr_dor_cd" Type="varchar" MaxLength="50" />
+          <Property Name="map_id" Type="varchar" MaxLength="50" />
+          <Property Name="own_dt" Type="varchar" MaxLength="50" />
+          <Property Name="life_est" Type="varchar" MaxLength="50" />
+          <Property Name="jt_flg" Type="varchar" MaxLength="50" />
+          <Property Name="inc_flg" Type="varchar" MaxLength="50" />
+          <Property Name="mh_flg" Type="varchar" MaxLength="50" />
+          <Property Name="lnd_sale_flg" Type="varchar" MaxLength="50" />
+          <Property Name="conf_flg" Type="varchar" MaxLength="50" />
+          <Property Name="mortage_cd" Type="varchar" MaxLength="50" />
+          <Property Name="owner1" Type="varchar" MaxLength="50" />
+          <Property Name="owner2" Type="varchar" MaxLength="50" />
+          <Property Name="m_state" Type="varchar" MaxLength="50" />
+          <Property Name="m_addr_1" Type="varchar" MaxLength="50" />
+          <Property Name="m_addr_2" Type="varchar" MaxLength="50" />
+          <Property Name="m_city" Type="varchar" MaxLength="50" />
+          <Property Name="m_zip" Type="varchar" MaxLength="50" />
+          <Property Name="m_country" Type="varchar" MaxLength="50" />
+          <Property Name="carr_rt" Type="varchar" MaxLength="50" />
+          <Property Name="mailto" Type="varchar" MaxLength="50" />
+          <Property Name="str" Type="char" MaxLength="30" />
+          <Property Name="str_pfx" Type="char" MaxLength="2" />
+          <Property Name="str_num" Type="varchar" MaxLength="50" />
+          <Property Name="str_sfx" Type="varchar" MaxLength="50" />
+          <Property Name="str_unit" Type="varchar" MaxLength="50" />
+          <Property Name="s_zip" Type="varchar" MaxLength="50" />
+          <Property Name="s_city" Type="varchar" MaxLength="50" />
+          <Property Name="plat_bk" Type="varchar" MaxLength="50" />
+          <Property Name="plat_pg" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sales">
+          <Key>
+            <PropertyRef Name="SalesId" />
+          </Key>
+          <Property Name="SalesId" Type="int" Nullable="false" />
+          <Property Name="strap" Type="char" Nullable="false" MaxLength="25" />
+          <Property Name="folio" Type="char" MaxLength="10" />
+          <Property Name="ln_num" Type="int" />
+          <Property Name="trns_cd" Type="char" MaxLength="2" />
+          <Property Name="or_bk" Type="char" MaxLength="5" />
+          <Property Name="or_pg" Type="char" MaxLength="5" />
+          <Property Name="grantor" Type="char" MaxLength="30" />
+          <Property Name="grantee" Type="char" MaxLength="30" />
+          <Property Name="dos" Type="date" />
+          <Property Name="price" Type="int" />
+          <Property Name="vi" Type="char" MaxLength="1" />
+          <Property Name="qu_flg" Type="char" MaxLength="1" />
+          <Property Name="doc_stamps" Type="decimal" Precision="9" Scale="2" />
+          <Property Name="rea_cd" Type="char" MaxLength="2" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HackathonContext" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="HackathonEntity" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="nals" EntityType="HackathonContext.nal" />
+          <EntitySet Name="sales" EntityType="HackathonContext.sale" />
+        </EntityContainer>
+        <EntityType Name="nal">
+          <Key>
+            <PropertyRef Name="nalId" />
+          </Key>
+          <Property Name="nalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="strap" Type="String" MaxLength="25" Unicode="false" FixedLength="true" />
+          <Property Name="folio" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="dor_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="val_method" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mill_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="nh_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vac_impr_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="yr_impr" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="yr_annexed" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="splt_dt" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="dsc_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="base_yr" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mkt_ar1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mkt_ar2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pr_strap" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="prob_deed" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="tenancy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="hx_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="wid_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="wdr_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="dis_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="wx_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="jst_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="cls_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="asd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="soh_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="tax_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="cur_base" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pct_soh" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mkt_soh" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mkt_mkt" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ag_x_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="tot_bld_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="cost_bld_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="tot_xf_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="tot_lnd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="cls_lnd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ag_lnd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="asd_lnd_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ncon_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="demo_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="comb_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="split_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="px_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pr_val" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ag_x_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="yr_created" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pr_dor_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="map_id" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="own_dt" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="life_est" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="jt_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="inc_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mh_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="lnd_sale_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="conf_flg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mortage_cd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="owner1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="owner2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="m_state" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="m_addr_1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="m_addr_2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="m_city" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="m_zip" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="m_country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="carr_rt" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="mailto" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="str" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="str_pfx" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="str_num" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="str_sfx" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="str_unit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="s_zip" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="s_city" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="plat_bk" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="plat_pg" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="sale">
+          <Key>
+            <PropertyRef Name="SalesId" />
+          </Key>
+          <Property Name="SalesId" Type="Int32" Nullable="false" />
+          <Property Name="strap" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="true" />
+          <Property Name="folio" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="ln_num" Type="Int32" />
+          <Property Name="trns_cd" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="or_bk" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="or_pg" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="grantor" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="grantee" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="dos" Type="DateTime" />
+          <Property Name="price" Type="Int32" />
+          <Property Name="vi" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="qu_flg" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="doc_stamps" Type="Decimal" Precision="9" Scale="2" />
+          <Property Name="rea_cd" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HackathonContextStoreContainer" CdmEntityContainer="HackathonEntity">
+          <EntitySetMapping Name="nals"><EntityTypeMapping TypeName="HackathonContext.nal"><MappingFragment StoreEntitySet="nal">
+            <ScalarProperty Name="nalId" ColumnName="nalId" />
+            <ScalarProperty Name="strap" ColumnName="strap" />
+            <ScalarProperty Name="folio" ColumnName="folio" />
+            <ScalarProperty Name="dor_cd" ColumnName="dor_cd" />
+            <ScalarProperty Name="val_method" ColumnName="val_method" />
+            <ScalarProperty Name="mill_cd" ColumnName="mill_cd" />
+            <ScalarProperty Name="nh_cd" ColumnName="nh_cd" />
+            <ScalarProperty Name="vac_impr_flg" ColumnName="vac_impr_flg" />
+            <ScalarProperty Name="yr_impr" ColumnName="yr_impr" />
+            <ScalarProperty Name="yr_annexed" ColumnName="yr_annexed" />
+            <ScalarProperty Name="splt_dt" ColumnName="splt_dt" />
+            <ScalarProperty Name="dsc_cd" ColumnName="dsc_cd" />
+            <ScalarProperty Name="base_yr" ColumnName="base_yr" />
+            <ScalarProperty Name="mkt_ar1" ColumnName="mkt_ar1" />
+            <ScalarProperty Name="mkt_ar2" ColumnName="mkt_ar2" />
+            <ScalarProperty Name="pr_strap" ColumnName="pr_strap" />
+            <ScalarProperty Name="prob_deed" ColumnName="prob_deed" />
+            <ScalarProperty Name="tenancy" ColumnName="tenancy" />
+            <ScalarProperty Name="hx_val" ColumnName="hx_val" />
+            <ScalarProperty Name="wid_val" ColumnName="wid_val" />
+            <ScalarProperty Name="wdr_val" ColumnName="wdr_val" />
+            <ScalarProperty Name="dis_val" ColumnName="dis_val" />
+            <ScalarProperty Name="wx_val" ColumnName="wx_val" />
+            <ScalarProperty Name="jst_val" ColumnName="jst_val" />
+            <ScalarProperty Name="cls_val" ColumnName="cls_val" />
+            <ScalarProperty Name="asd_val" ColumnName="asd_val" />
+            <ScalarProperty Name="soh_val" ColumnName="soh_val" />
+            <ScalarProperty Name="tax_val" ColumnName="tax_val" />
+            <ScalarProperty Name="cur_base" ColumnName="cur_base" />
+            <ScalarProperty Name="pct_soh" ColumnName="pct_soh" />
+            <ScalarProperty Name="mkt_soh" ColumnName="mkt_soh" />
+            <ScalarProperty Name="mkt_mkt" ColumnName="mkt_mkt" />
+            <ScalarProperty Name="ag_x_val" ColumnName="ag_x_val" />
+            <ScalarProperty Name="tot_bld_val" ColumnName="tot_bld_val" />
+            <ScalarProperty Name="cost_bld_val" ColumnName="cost_bld_val" />
+            <ScalarProperty Name="tot_xf_val" ColumnName="tot_xf_val" />
+            <ScalarProperty Name="tot_lnd_val" ColumnName="tot_lnd_val" />
+            <ScalarProperty Name="cls_lnd_val" ColumnName="cls_lnd_val" />
+            <ScalarProperty Name="ag_lnd_val" ColumnName="ag_lnd_val" />
+            <ScalarProperty Name="asd_lnd_val" ColumnName="asd_lnd_val" />
+            <ScalarProperty Name="ncon_val" ColumnName="ncon_val" />
+            <ScalarProperty Name="demo_val" ColumnName="demo_val" />
+            <ScalarProperty Name="comb_val" ColumnName="comb_val" />
+            <ScalarProperty Name="split_val" ColumnName="split_val" />
+            <ScalarProperty Name="px_val" ColumnName="px_val" />
+            <ScalarProperty Name="pr_val" ColumnName="pr_val" />
+            <ScalarProperty Name="ag_x_flg" ColumnName="ag_x_flg" />
+            <ScalarProperty Name="yr_created" ColumnName="yr_created" />
+            <ScalarProperty Name="pr_dor_cd" ColumnName="pr_dor_cd" />
+            <ScalarProperty Name="map_id" ColumnName="map_id" />
+            <ScalarProperty Name="own_dt" ColumnName="own_dt" />
+            <ScalarProperty Name="life_est" ColumnName="life_est" />
+            <ScalarProperty Name="jt_flg" ColumnName="jt_flg" />
+            <ScalarProperty Name="inc_flg" ColumnName="inc_flg" />
+            <ScalarProperty Name="mh_flg" ColumnName="mh_flg" />
+            <ScalarProperty Name="lnd_sale_flg" ColumnName="lnd_sale_flg" />
+            <ScalarProperty Name="conf_flg" ColumnName="conf_flg" />
+            <ScalarProperty Name="mortage_cd" ColumnName="mortage_cd" />
+            <ScalarProperty Name="owner1" ColumnName="owner1" />
+            <ScalarProperty Name="owner2" ColumnName="owner2" />
+            <ScalarProperty Name="m_state" ColumnName="m_state" />
+            <ScalarProperty Name="m_addr_1" ColumnName="m_addr_1" />
+            <ScalarProperty Name="m_addr_2" ColumnName="m_addr_2" />
+            <ScalarProperty Name="m_city" ColumnName="m_city" />
+            <ScalarProperty Name="m_zip" ColumnName="m_zip" />
+            <ScalarProperty Name="m_country" ColumnName="m_country" />
+            <ScalarProperty Name="carr_rt" ColumnName="carr_rt" />
+            <ScalarProperty Name="mailto" ColumnName="mailto" />
+            <ScalarProperty Name="str" ColumnName="str" />
+            <ScalarProperty Name="str_pfx" ColumnName="str_pfx" />
+            <ScalarProperty Name="str_num" ColumnName="str_num" />
+            <ScalarProperty Name="str_sfx" ColumnName="str_sfx" />
+            <ScalarProperty Name="str_unit" ColumnName="str_unit" />
+            <ScalarProperty Name="s_zip" ColumnName="s_zip" />
+            <ScalarProperty Name="s_city" ColumnName="s_city" />
+            <ScalarProperty Name="plat_bk" ColumnName="plat_bk" />
+            <ScalarProperty Name="plat_pg" ColumnName="plat_pg" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="sales"><EntityTypeMapping TypeName="HackathonContext.sale"><MappingFragment StoreEntitySet="sales">
+            <ScalarProperty Name="SalesId" ColumnName="SalesId" />
+            <ScalarProperty Name="strap" ColumnName="strap" />
+            <ScalarProperty Name="folio" ColumnName="folio" />
+            <ScalarProperty Name="ln_num" ColumnName="ln_num" />
+            <ScalarProperty Name="trns_cd" ColumnName="trns_cd" />
+            <ScalarProperty Name="or_bk" ColumnName="or_bk" />
+            <ScalarProperty Name="or_pg" ColumnName="or_pg" />
+            <ScalarProperty Name="grantor" ColumnName="grantor" />
+            <ScalarProperty Name="grantee" ColumnName="grantee" />
+            <ScalarProperty Name="dos" ColumnName="dos" />
+            <ScalarProperty Name="price" ColumnName="price" />
+            <ScalarProperty Name="vi" ColumnName="vi" />
+            <ScalarProperty Name="qu_flg" ColumnName="qu_flg" />
+            <ScalarProperty Name="doc_stamps" ColumnName="doc_stamps" />
+            <ScalarProperty Name="rea_cd" ColumnName="rea_cd" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Hackathon" ZoomLevel="10">
+        <EntityTypeShape EntityType="HackathonContext.nal" Width="1.5" PointX="0.75" PointY="0.75" Height="15.825989583333332" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackathonContext.sale" Width="1.5" PointX="2.75" PointY="0.75" Height="3.9033007812499996" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

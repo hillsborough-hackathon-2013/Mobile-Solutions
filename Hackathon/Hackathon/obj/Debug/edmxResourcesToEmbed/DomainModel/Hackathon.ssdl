@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HackathonContext.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="HackathonContextStoreContainer">
+    <EntitySet Name="nal" EntityType="HackathonContext.Store.nal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sales" EntityType="HackathonContext.Store.sales" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="nal">
+    <Key>
+      <PropertyRef Name="nalId" />
+    </Key>
+    <Property Name="nalId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="strap" Type="char" MaxLength="25" />
+    <Property Name="folio" Type="varchar" MaxLength="50" />
+    <Property Name="dor_cd" Type="varchar" MaxLength="50" />
+    <Property Name="val_method" Type="varchar" MaxLength="50" />
+    <Property Name="mill_cd" Type="varchar" MaxLength="50" />
+    <Property Name="nh_cd" Type="varchar" MaxLength="50" />
+    <Property Name="vac_impr_flg" Type="varchar" MaxLength="50" />
+    <Property Name="yr_impr" Type="varchar" MaxLength="50" />
+    <Property Name="yr_annexed" Type="varchar" MaxLength="50" />
+    <Property Name="splt_dt" Type="varchar" MaxLength="50" />
+    <Property Name="dsc_cd" Type="varchar" MaxLength="50" />
+    <Property Name="base_yr" Type="varchar" MaxLength="50" />
+    <Property Name="mkt_ar1" Type="varchar" MaxLength="50" />
+    <Property Name="mkt_ar2" Type="varchar" MaxLength="50" />
+    <Property Name="pr_strap" Type="varchar" MaxLength="50" />
+    <Property Name="prob_deed" Type="varchar" MaxLength="50" />
+    <Property Name="tenancy" Type="varchar" MaxLength="50" />
+    <Property Name="hx_val" Type="varchar" MaxLength="50" />
+    <Property Name="wid_val" Type="varchar" MaxLength="50" />
+    <Property Name="wdr_val" Type="varchar" MaxLength="50" />
+    <Property Name="dis_val" Type="varchar" MaxLength="50" />
+    <Property Name="wx_val" Type="varchar" MaxLength="50" />
+    <Property Name="jst_val" Type="varchar" MaxLength="50" />
+    <Property Name="cls_val" Type="varchar" MaxLength="50" />
+    <Property Name="asd_val" Type="varchar" MaxLength="50" />
+    <Property Name="soh_val" Type="varchar" MaxLength="50" />
+    <Property Name="tax_val" Type="varchar" MaxLength="50" />
+    <Property Name="cur_base" Type="varchar" MaxLength="50" />
+    <Property Name="pct_soh" Type="varchar" MaxLength="50" />
+    <Property Name="mkt_soh" Type="varchar" MaxLength="50" />
+    <Property Name="mkt_mkt" Type="varchar" MaxLength="50" />
+    <Property Name="ag_x_val" Type="varchar" MaxLength="50" />
+    <Property Name="tot_bld_val" Type="varchar" MaxLength="50" />
+    <Property Name="cost_bld_val" Type="varchar" MaxLength="50" />
+    <Property Name="tot_xf_val" Type="varchar" MaxLength="50" />
+    <Property Name="tot_lnd_val" Type="varchar" MaxLength="50" />
+    <Property Name="cls_lnd_val" Type="varchar" MaxLength="50" />
+    <Property Name="ag_lnd_val" Type="varchar" MaxLength="50" />
+    <Property Name="asd_lnd_val" Type="varchar" MaxLength="50" />
+    <Property Name="ncon_val" Type="varchar" MaxLength="50" />
+    <Property Name="demo_val" Type="varchar" MaxLength="50" />
+    <Property Name="comb_val" Type="varchar" MaxLength="50" />
+    <Property Name="split_val" Type="varchar" MaxLength="50" />
+    <Property Name="px_val" Type="varchar" MaxLength="50" />
+    <Property Name="pr_val" Type="varchar" MaxLength="50" />
+    <Property Name="ag_x_flg" Type="varchar" MaxLength="50" />
+    <Property Name="yr_created" Type="varchar" MaxLength="50" />
+    <Property Name="pr_dor_cd" Type="varchar" MaxLength="50" />
+    <Property Name="map_id" Type="varchar" MaxLength="50" />
+    <Property Name="own_dt" Type="varchar" MaxLength="50" />
+    <Property Name="life_est" Type="varchar" MaxLength="50" />
+    <Property Name="jt_flg" Type="varchar" MaxLength="50" />
+    <Property Name="inc_flg" Type="varchar" MaxLength="50" />
+    <Property Name="mh_flg" Type="varchar" MaxLength="50" />
+    <Property Name="lnd_sale_flg" Type="varchar" MaxLength="50" />
+    <Property Name="conf_flg" Type="varchar" MaxLength="50" />
+    <Property Name="mortage_cd" Type="varchar" MaxLength="50" />
+    <Property Name="owner1" Type="varchar" MaxLength="50" />
+    <Property Name="owner2" Type="varchar" MaxLength="50" />
+    <Property Name="m_state" Type="varchar" MaxLength="50" />
+    <Property Name="m_addr_1" Type="varchar" MaxLength="50" />
+    <Property Name="m_addr_2" Type="varchar" MaxLength="50" />
+    <Property Name="m_city" Type="varchar" MaxLength="50" />
+    <Property Name="m_zip" Type="varchar" MaxLength="50" />
+    <Property Name="m_country" Type="varchar" MaxLength="50" />
+    <Property Name="carr_rt" Type="varchar" MaxLength="50" />
+    <Property Name="mailto" Type="varchar" MaxLength="50" />
+    <Property Name="str" Type="char" MaxLength="30" />
+    <Property Name="str_pfx" Type="char" MaxLength="2" />
+    <Property Name="str_num" Type="varchar" MaxLength="50" />
+    <Property Name="str_sfx" Type="varchar" MaxLength="50" />
+    <Property Name="str_unit" Type="varchar" MaxLength="50" />
+    <Property Name="s_zip" Type="varchar" MaxLength="50" />
+    <Property Name="s_city" Type="varchar" MaxLength="50" />
+    <Property Name="plat_bk" Type="varchar" MaxLength="50" />
+    <Property Name="plat_pg" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sales">
+    <Key>
+      <PropertyRef Name="SalesId" />
+    </Key>
+    <Property Name="SalesId" Type="int" Nullable="false" />
+    <Property Name="strap" Type="char" Nullable="false" MaxLength="25" />
+    <Property Name="folio" Type="char" MaxLength="10" />
+    <Property Name="ln_num" Type="int" />
+    <Property Name="trns_cd" Type="char" MaxLength="2" />
+    <Property Name="or_bk" Type="char" MaxLength="5" />
+    <Property Name="or_pg" Type="char" MaxLength="5" />
+    <Property Name="grantor" Type="char" MaxLength="30" />
+    <Property Name="grantee" Type="char" MaxLength="30" />
+    <Property Name="dos" Type="date" />
+    <Property Name="price" Type="int" />
+    <Property Name="vi" Type="char" MaxLength="1" />
+    <Property Name="qu_flg" Type="char" MaxLength="1" />
+    <Property Name="doc_stamps" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="rea_cd" Type="char" MaxLength="2" />
+  </EntityType>
+</Schema>
